@@ -15,7 +15,6 @@ beautifulsoup4==4.9.1
 billiard==3.6.1.0
 bleach==3.2.1
 blis==0.4.1
-Brlapi==0.6.6
 bs4==0.0.1
 buildozer==1.2.0.dev0
 cached-property==1.5.2

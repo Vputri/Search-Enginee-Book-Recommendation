@@ -1,0 +1,5 @@
+urllib3==1.25.9
+sklearn==0.0
+Django==3.0.7
+pickleshare==0.7.5
+pandas==0.23.0

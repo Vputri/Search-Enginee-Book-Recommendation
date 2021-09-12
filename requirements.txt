@@ -29,7 +29,6 @@ Click==7.0
 clipboard==0.0.4
 coala-utils==0.5.1
 colorama==0.3.7
-command-not-found==0.3
 configobj==5.0.6
 coverage==3.6
 cupshelpers==1.0

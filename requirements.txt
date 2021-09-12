@@ -31,7 +31,6 @@ coala-utils==0.5.1
 colorama==0.3.7
 configobj==5.0.6
 coverage==3.6
-cupshelpers==1.0
 cycler==0.10.0
 cymem==2.0.3
 Cython==0.29.19

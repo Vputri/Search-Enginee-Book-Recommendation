@@ -6,3 +6,4 @@ pickleshare==0.7.5
 pandas==0.23.0
 scikit-learn==0.21.3
 Cython==0.29.19
+numpy==1.17.2

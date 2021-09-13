@@ -1,4 +1,5 @@
 import os
+from whitenoise.django import DjangoWhiteNoise
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -79,6 +80,9 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+application = get_wsgi_application()
+application = DjangoWhiteNoise(application)
 
 STATIC_ROOT = os.path.join(BASE_DIR,"static_files")
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'

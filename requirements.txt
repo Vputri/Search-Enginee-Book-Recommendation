@@ -1,3 +1,4 @@
 pandas==0.23.0
 Django==3.0.7
 scikit_learn==0.24.2
+Cython==0.29.19

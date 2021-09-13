@@ -4,17 +4,20 @@ import pickle
 from sklearn.metrics.pairwise import cosine_similarity
 from urllib.request import urlopen
 
+my_dir = os.path.dirname(__file__)
+model_file_path = os.path.join(my_dir, 'Model.pkl')
+book_file_path = os.path.join(my_dir, 'book_data.csv')
+
 def index(request):
     return render(request, 'webbot/index.htm')
 
 
 def bot_search(request):
     query = request.GET.get('query')
-    book = pd.read_csv("/home/vika/searchengine/web/webbot/book_data.csv")   
+    book = pd.read_csv(book_file_path)   
 
     try: 
-        filename = '/home/vika/searchengine/web/webbot/Model.pkl'
-        output = open(filename,'rb')
+        output = open(model_file_path,'rb')
         new_dict = pickle.load(output)
         output.close()
         cosine_sim = cosine_similarity(new_dict, new_dict)

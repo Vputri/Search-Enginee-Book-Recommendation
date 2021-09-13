@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import os
 import pandas as pd
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
